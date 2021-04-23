@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Parameters:
+  AWSSecretsManagerSecretName:
+    Type: String
+    Default: "github-access-token"
+    Description: The name of the AWS Secrets Manager Secret that contains your GitHub Access Token
+    NoEcho: True
+
+Resources:
+  MyResource:
+    Type: "MyOrg::MyService::MyResource"
+    Properties:
+      Title: "Hello World Hello World Hello World"
+      CoverSheetIncluded: true
+      TestCode: "NOT_STARTED"
+      Authors:
+        - "John Doe"
+        - "Jane Doe"
+      # Tags:
+      #   - Key: "Application"
+      #     Value: "app01"
+      #   - Key: "Costcenter"
+      #     Value: "999999999"
+
+Outputs:
+  TPSCode:
+    Value: !GetAtt MyResource.TPSCode
