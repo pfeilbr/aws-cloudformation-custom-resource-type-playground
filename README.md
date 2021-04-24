@@ -6,6 +6,13 @@ examples for creating CloudFormation extensions and specifically [CloudFormation
 
 > You can use the CloudFormation CLI to register extensions—both those you create yourself, as well as ones shared with you—with the CloudFormation registry. This enables you to use CloudFormation capabilities to create, provision, and manage these custom types in a safe and repeatable manner, just as you would any AWS resource
 
+There are the following four types of CloudFormation extension mechanisms:
+
+* [CloudFormation Custom Resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html)
+* [CloudFormation Module](https://aws.amazon.com/blogs/mt/introducing-aws-cloudformation-modules/)
+* [CloudFormation Custom Resource Types](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-types.html)
+* [CloudFormation Macros](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html)
+
 see [`python-custom-resource-type-example`](python-custom-resource-type-example)
 
 ## Notes
