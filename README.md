@@ -7,7 +7,7 @@ see [`python-custom-resource-type-example`](python-custom-resource-type-example)
 
 ## Notes
 
-* can be backed by lambda or [SNS topic](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources-sns.html#walkthrough-custom-resources-sns-adding-nonaws-resource)
+* [Custom resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) can be backed by lambda or [SNS topic](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources-sns.html#walkthrough-custom-resources-sns-adding-nonaws-resource)
 
 ## Resources
 
