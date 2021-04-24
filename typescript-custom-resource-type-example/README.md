@@ -10,6 +10,12 @@ cfn init
 # generate model python code from schema .json
 cfn generate
 
+# update schema
+code org-platformservice-cdn.json
+
+# update role with any additional permissions needed for provisioning
+code resource-role.yaml
+
 # build
 npm run build
 
