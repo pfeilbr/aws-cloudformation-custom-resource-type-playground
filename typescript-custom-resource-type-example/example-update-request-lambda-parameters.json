@@ -1,0 +1,49 @@
+{
+    "session": {
+        "options": {
+            "credentials": {
+                "accessKeyId": "<REDACTED>",
+                "secretAccessKey": "<REDACTED>",
+                "sessionToken": "<REDACTED>"
+            },
+            "region": "us-east-1"
+        }
+    },
+    "request": {
+        "clientRequestToken": "<REDACTED>",
+        "desiredResourceState": {
+            "TPSCode": "typescript-custom-resource-type-example-stack-01-MyResource-615d6dbb41ab",
+            "Title": "Hello World Hello World Hello World",
+            "CoverSheetIncluded": false,
+            "TestCode": "NOT_STARTED",
+            "Authors": [
+                "John Doe",
+                "Jane Doe",
+                "Mike Smith",
+                "Joe Cool",
+                "Joan Smith"
+            ]
+        },
+        "previousResourceState": {
+            "TPSCode": "typescript-custom-resource-type-example-stack-01-MyResource-615d6dbb41ab",
+            "Title": "Hello World Hello World Hello World",
+            "CoverSheetIncluded": true,
+            "TestCode": "NOT_STARTED",
+            "Authors": [
+                "John Doe",
+                "Jane Doe",
+                "Mike Smith",
+                "Joe Cool"
+            ]
+        },
+        "systemTags": {
+            "aws:cloudformation:stack-name": "typescript-custom-resource-type-example-stack-01",
+            "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:529276214230:stack/typescript-custom-resource-type-example-stack-01/64e0a5c0-a521-11eb-9fa5-1277bf9feb05",
+            "aws:cloudformation:logical-id": "MyResource"
+        },
+        "awsAccountId": "529276214230",
+        "awsPartition": "aws",
+        "logicalResourceIdentifier": "MyResource",
+        "region": "us-east-1"
+    }
+}

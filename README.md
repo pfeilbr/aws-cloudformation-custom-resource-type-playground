@@ -13,11 +13,28 @@ There are the following four types of CloudFormation extension mechanisms:
 * [CloudFormation Custom Resource Types](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-types.html)
 * [CloudFormation Macros](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html)
 
-see [`python-custom-resource-type-example`](python-custom-resource-type-example)
+## Example Custom Resource Types
+
+* [`python-custom-resource-type-example`](python-custom-resource-type-example)
+* [`typescript-custom-resource-type-example`](typescript-custom-resource-type-example)
 
 ## Notes
 
 * [Custom resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) can be backed by lambda or [SNS topic](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources-sns.html#walkthrough-custom-resources-sns-adding-nonaws-resource)
+
+## TODO
+
+* Org::Service::WAFCDN -> CDK app containing
+* API Gateway (custom auth token | or cloudformation security context identity) -> Step Fn -> create stack -> wait stack -> loop
+* custom resource lambda handler is just a pass through to APIG provisioning the resources.
+
+```yaml
+- Sid: DeleteAppRoles
+  Effect: Allow
+  Action:
+    - wafcdn:*
+  Resource: !Sub "arn:aws:cloudformation:${AWS::Region}:${AWS::AccountId}:type/resource/MyOrg-MyService-MyResource/*"
+```
 
 ## Resources
 

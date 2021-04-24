@@ -4,7 +4,7 @@ Description: AWS SAM template for the MyOrg::MyService::MyResource resource type
 
 Globals:
   Function:
-    Timeout: 180  # docker start-up times can be long for SAM CLI
+    Timeout: 180 # docker start-up times can be long for SAM CLI
     MemorySize: 256
 
 Resources:
@@ -22,3 +22,9 @@ Resources:
       Runtime: python3.7
       CodeUri: build/
 
+  MyTest:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: myorg_myservice_myresource.handlers.test
+      Runtime: python3.7
+      CodeUri: build/

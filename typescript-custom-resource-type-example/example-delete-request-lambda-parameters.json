@@ -1,0 +1,33 @@
+{
+    "session": {
+        "options": {
+            "credentials": {
+                "accessKeyId": "<REDACTED>",
+                "secretAccessKey": "<REDACTED>",
+                "sessionToken": "<REDACTED>"
+            },
+            "region": "us-east-1"
+        }
+    },
+    "request": {
+        "clientRequestToken": "<REDACTED>",
+        "desiredResourceState": {
+            "TPSCode": "typescript-custom-resource-type-example-stack-01-MyResource-615d6dbb41ab",
+            "Title": "Hello World Hello World Hello World",
+            "CoverSheetIncluded": false,
+            "TestCode": "NOT_STARTED",
+            "Authors": [
+                "John Doe",
+                "Jane Doe",
+                "Mike Smith",
+                "Joe Cool",
+                "Joan Smith"
+            ]
+        },
+        "previousResourceState": {},
+        "awsAccountId": "529276214230",
+        "awsPartition": "aws",
+        "logicalResourceIdentifier": "MyResource",
+        "region": "us-east-1"
+    }
+}

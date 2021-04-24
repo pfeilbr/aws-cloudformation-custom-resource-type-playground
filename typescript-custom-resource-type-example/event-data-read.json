@@ -1,0 +1,39 @@
+{
+    awsAccountId: '529276214230',
+    bearerToken: '<REDACTED>',
+    region: 'us-east-1',
+    responseEndpoint: null,
+    action: 'READ',
+    nextToken: null,
+    resourceType: 'Org: :PlatformService: :CDN',
+    resourceTypeVersion: '00000004',
+    requestData: {
+      logicalResourceId: 'MyResource',
+      resourceProperties: {
+        TPSCode: 'typescript-custom-resource-type-example-stack-01-MyResource-615d6dbb41ab'
+        },
+      previousResourceProperties: null,
+      typeConfiguration: null,
+      callerCredentials: {
+        accessKeyId: '<REDACTED>',
+        secretAccessKey: '<REDACTED>',
+        sessionToken: '<REDACTED>'
+        },
+      providerCredentials: {
+        accessKeyId: '<REDACTED>',
+        secretAccessKey: '<REDACTED>',
+        sessionToken: '<REDACTED>'
+        },
+      providerLogGroupName: 'org-platformservice-cdn-logs',
+      systemTags: null,
+      previousSystemTags: null,
+      stackTags: null,
+      previousStackTags: null
+    },
+    stackId: 'arn:aws:cloudformation:us-east-1: 529276214230:stack/typescript-custom-resource-type-example-stack-01/64e0a5c0-a521-11eb-9fa5-1277bf9feb05',
+    callbackContext: null,
+    snapshotRequested: null,
+    rollback: null,
+    driftable: null,
+    features: null
+}

@@ -1,5 +1,6 @@
 import logging
 from typing import Any, MutableMapping, Optional
+import json
 
 from cloudformation_cli_python_lib import (
     Action,
@@ -22,6 +23,10 @@ resource = Resource(TYPE_NAME, ResourceModel)
 test_entrypoint = resource.test_entrypoint
 
 
+def test(event, context):
+    LOG.debug('hello')
+
+
 @resource.handler(Action.CREATE)
 def create_handler(
     session: Optional[SessionProxy],
@@ -34,6 +39,7 @@ def create_handler(
         resourceModel=model,
     )
     # TODO: put code here
+    LOG.debug('%s', request)
 
     # Example:
     try:

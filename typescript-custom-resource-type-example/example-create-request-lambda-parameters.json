@@ -1,0 +1,34 @@
+{
+    "session": {
+        "options": {
+            "credentials": {
+                "accessKeyId": "<REDACTED>",
+                "secretAccessKey": "<REDACTED>",
+                "sessionToken": "<REDACTED>"
+            },
+            "region": "us-east-1"
+        }
+    },
+    "request": {
+        "clientRequestToken": "<REDACTED>",
+        "desiredResourceState": {
+            "Title": "Hello World Hello World Hello World",
+            "CoverSheetIncluded": true,
+            "TestCode": "NOT_STARTED",
+            "Authors": [
+                "John Doe",
+                "Jane Doe"
+            ]
+        },
+        "previousResourceState": {},
+        "systemTags": {
+            "aws:cloudformation:stack-name": "typescript-custom-resource-type-example-stack-01",
+            "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:529276214230:stack/typescript-custom-resource-type-example-stack-01/1030b990-a51f-11eb-ac9d-0e35b405c3d1",
+            "aws:cloudformation:logical-id": "MyResource"
+        },
+        "awsAccountId": "529276214230",
+        "awsPartition": "aws",
+        "logicalResourceIdentifier": "MyResource",
+        "region": "us-east-1"
+    }
+}

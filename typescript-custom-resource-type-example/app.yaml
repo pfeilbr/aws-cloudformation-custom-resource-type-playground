@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Resources:
+  MyResource:
+    Type: "Org::PlatformService::CDN"
+    Properties:
+      Title: "Hello World Hello World Hello World"
+      CoverSheetIncluded: false
+      TestCode: "NOT_STARTED"
+      Authors:
+        - "John Doe"
+        - "Jane Doe"
+        - "Mike Smith"
+        - "Joe Cool"
+        - "Joan Smith"
+      # Tags:
+      #   - Tag:
+      #       Key: "Application"
+      #       Value: "app01"
+      #   - Tag:
+      #       Key: "Costcenter"
+      #       Value: "999999999"
+
+Outputs:
+  TPSCode:
+    Value: !GetAtt MyResource.TPSCode

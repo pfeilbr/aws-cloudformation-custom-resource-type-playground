@@ -1,12 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
 
-Parameters:
-  AWSSecretsManagerSecretName:
-    Type: String
-    Default: "github-access-token"
-    Description: The name of the AWS Secrets Manager Secret that contains your GitHub Access Token
-    NoEcho: True
-
 Resources:
   MyResource:
     Type: "MyOrg::MyService::MyResource"

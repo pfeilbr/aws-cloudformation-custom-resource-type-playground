@@ -10,6 +10,10 @@ cfn init
 # generate model python code from schema .json
 cfn generate
 
+# test with SAM
+sam local invoke TestEntrypoint --event example_inputs/inputs_1_create.json
+
+# register in CloudFormation registry
 cfn submit --set-default --region us-east-1
 ```
 
@@ -19,7 +23,7 @@ see [`app.yaml`](app.yaml) for `MyOrg::MyService::MyResource` usage
 
 ```sh
 REGION="us-east-1"
-STACK_NAME="python-custom-resource-type-example-stack"
+STACK_NAME="python-custom-resource-type-example-stack-01"
 
 # create application (app) that uses ``MyOrg::MyService::MyResource`
 aws cloudformation create-stack \
@@ -48,13 +52,25 @@ aws cloudformation wait stack-delete-complete \
 
 ## screenshots
 
-stack creation with custom resource type
+### Cloudformation Registry | Custom Resource
 
-![](https://www.evernote.com/l/AAEy7sTaWrRCqI0r0vujLsdQDpTR2Ifx77UB/image.png)
+<img src="https://www.evernote.com/l/AAFS2jD6YstKwr0sO8DlIX0DgNDLvZkUmOMB/image.png" alt="" width="75%" />
 
-stack output for custom resource type
+### Cloudformation Registry | Custom Resource Detail View
 
-![](https://www.evernote.com/l/AAHZwUytc8lOxo8SkCSwAFDOzXyoBk7IlREB/image.png)
+<img src="https://www.evernote.com/l/AAE0a18Y_45GkLtGN375nLj7G0e6_17zas4B/image.png" alt="" width="75%" />
+
+### Cloudformation | stack creation with custom resource type
+
+<img src="https://www.evernote.com/l/AAEy7sTaWrRCqI0r0vujLsdQDpTR2Ifx77UB/image.png" alt="" width="75%" />
+
+### Cloudformation | stack output for custom resource type
+
+<img src="https://www.evernote.com/l/AAHZwUytc8lOxo8SkCSwAFDOzXyoBk7IlREB/image.png" alt="" width="75%" />
+
+### Custom Resource Lambda Handler Logs Sent to CloudWatch Logs
+
+<img src="https://www.evernote.com/l/AAHbbrUkD4pClbbpKZq4FKMb99QGzo5WwLQB/image.png" alt="" width="75%" />
 
 ---
 
