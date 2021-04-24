@@ -1,7 +1,10 @@
 # aws-cloudformation-custom-resource-type-playground
 
-learn how to create [CloudFormation Custom Resource Type](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what-is-cloudformation-cli.html)
+examples for creating CloudFormation extensions and specifically [CloudFormation Custom Resource Type](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what-is-cloudformation-cli.html)
 
+> An extension is an artifact, registered in the CloudFormation Registry, which augments the functionality of CloudFormation in a native manner
+
+> You can use the CloudFormation CLI to register extensions—both those you create yourself, as well as ones shared with you—with the CloudFormation registry. This enables you to use CloudFormation capabilities to create, provision, and manage these custom types in a safe and repeatable manner, just as you would any AWS resource
 
 see [`python-custom-resource-type-example`](python-custom-resource-type-example)
 
